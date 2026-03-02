@@ -6,7 +6,7 @@ import { featureItems } from "@/lib/constants";
 
 export function FeatureGrid() {
   return (
-    <section id="how-it-works" className="py-12 sm:py-16 md:py-20">
+    <section id="how-it-works" className="pt-2 pb-12 sm:pb-16 md:pb-20">
       <Container>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {featureItems.map((feature, i) => (
@@ -22,7 +22,7 @@ export function FeatureGrid() {
               }}
             >
               <h3 className="text-white text-lg sm:text-[21px] font-normal tracking-[-0.01em]">
-                {feature.number} - {feature.title}
+                {feature.number} — {feature.title}
               </h3>
               <p className="mt-4 sm:mt-6 text-muted text-base leading-[22px] tracking-[-0.01em]">
                 {feature.description}
