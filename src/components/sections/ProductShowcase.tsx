@@ -23,14 +23,14 @@ export function ProductShowcase() {
               alt="Scenic mountain landscape"
               width={2688}
               height={1792}
-              className="w-full h-auto object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
               priority
             />
-          </div>
 
-          {/* Browser mockup overlay */}
-          <div className="absolute inset-x-3 bottom-[3%] sm:inset-x-8 md:inset-x-16 lg:inset-x-[14%] top-[6%] sm:top-[6%]">
-            <BrowserMockup />
+            {/* Browser mockup overlay */}
+            <div className="relative mx-3 sm:mx-8 md:mx-16 lg:mx-[14%] py-[6%]">
+              <BrowserMockup />
+            </div>
           </div>
         </motion.div>
       </Container>
